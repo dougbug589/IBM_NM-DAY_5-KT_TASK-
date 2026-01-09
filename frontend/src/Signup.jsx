@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const API_URL = 'https://dreamy-stroopwafel-f44aff.netlify.app/login';
+// Prefer env override so we can point to deployed or local API easily.
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 function Signup({ onLogin }) {
     const [username, setUsername] = useState('');
