@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://dreamy-stroopwafel-f44aff.netlify.app/login';
 
 function CreatePost({ user }) {
   const [content, setContent] = useState('');

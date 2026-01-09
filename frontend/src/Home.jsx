@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://dreamy-stroopwafel-f44aff.netlify.app/login';
 
 function Home({ isAuthenticated, user, onLogout }) {
   const [posts, setPosts] = useState([]);
